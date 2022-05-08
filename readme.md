@@ -39,3 +39,7 @@ $ ./GNUController.py  --rtlsdr "rtl=0" --name "RTLSDR_teste" \
 --freq 1420000000 --n_integration 100 --n_samples 1000 \
 --duration 300 --csvflag --fitflag
 ```
+
+## Exemplo de FlowGraph
+
+![GNU flow](./assets/GNUFLOW.png)
