@@ -42,7 +42,7 @@ def main(top_block_cls=PFB, options=None):
     PFB.csv = args.csv
     PFB.fit = args.fit
 
-    duration = args.duration
+    duration = int(args.duration)
 
     tb = top_block_cls()
 
