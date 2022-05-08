@@ -27,6 +27,21 @@ Os parâmetros do módulo são:
 - `csv`: booleano para salvar ou não em formato CVS
 - `fit`: booleano para salvar ou não em formato FITS
 
+## Funcionamento do Bloco
+
+O bloco lê "n_samples" da entrada de dados e produz uma matrix de `n_samples` linhas e `vec_length` colunas, representando o fluxo do tempo e as frequências, respectivamente. A faixa de frequências é de `freq - samp_rate/2` a `freq + samp_rate/2`.
+
+O arquivo é gravado com o nome padronizado da seguinte forma:
+```
+prefix_YYMMDD_ HHMMSS_MODE.fit  
+```
+
+onde YYMMDD e HHMMSS represetam a data e o tempo de início da gravação.
+
+A leitura se procede em um loop `work` do `GNURadio` e grava os arquivos sequencialmente, todos com o mesmo número de amostras. 
+
+Se a execução for manualmente interrompida os dados no buffer são salvos e o arquivo resultante será menor do que o usual, mas conterá todos os dados.
+
 ## Linha de comando
 
 O programa `grc_flowgraphs/PFB_Spectrometer.py` é um flow gnuradio que usa o bloco, pode ser utulizado como exemplo para aprender suas funcionalidades.

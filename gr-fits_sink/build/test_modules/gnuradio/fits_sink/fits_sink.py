@@ -1,4 +1,4 @@
-prfefi#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # Copyright 2022 Luciano Barosi.

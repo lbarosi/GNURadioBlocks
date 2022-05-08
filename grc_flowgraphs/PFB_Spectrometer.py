@@ -31,7 +31,7 @@ import time
 class PFB_Spectrometer(gr.top_block):
 
     def __init__(self):
-        gr.top_block.__init__(self, "Spectrometer", catch_exceptions=True)
+        gr.top_block.__init__(self, "Spectrometer")
 
         ##################################################
         # Variables
