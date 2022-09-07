@@ -2,6 +2,16 @@
 
 Bloco GNURadio para gravação em formatos FITS e CSV.
 
+Recomendado que você instale o gnuradio em um ambiente conda:
+```
+conda create -n gnuradio
+conda activate gnuradio
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+conda install gnuradio=3.10 python=3.10 gnuradio-build-deps rtl-sdr gnuradio-osmosdr astropy
+```
+
+Para instalar o módulo siga o procedimento usual do `cmake`:
 
 ```
 git clone endereço
@@ -14,7 +24,7 @@ sudo make install
 sudo ldconfig
 ```
 
-Se você usa GNURADIO em um ambiente conda ou em endereço customizado em sua máquina local você deve informar o `cmake` sobre isso, por exemplo `cmake -DCMAKE_INSTALL_PREFIX=$CONDA_PREFFIX ../ `.
+Se você usa GNURADIO em um ambiente conda ou em endereço customizado em sua máquina local você deve informar o `cmake` sobre isso, por exemplo `cmake -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX ../ `.
 
 Os parâmetros do módulo são:
 
@@ -38,7 +48,7 @@ prefix_YYMMDD_ HHMMSS_MODE.fit
 
 onde YYMMDD e HHMMSS represetam a data e o tempo de início da gravação.
 
-A leitura se procede em um loop `work` do `GNURadio` e grava os arquivos sequencialmente, todos com o mesmo número de amostras. 
+A leitura se procede em um loop `work` do `GNURadio` e grava os arquivos sequencialmente, todos com o mesmo número de amostras.
 
 Se a execução for manualmente interrompida os dados no buffer são salvos e o arquivo resultante será menor do que o usual, mas conterá todos os dados.
 
@@ -50,9 +60,9 @@ O programa `grc_flowgraphs/GNUController.py` é um script em python que controla
 
 ```bash
 $ ./GNUController.py  --rtlsdr "rtl=0" --name "RTLSDR_teste" \
-+ --mode "01" --vec_length 4096 --samp_rate 2048000 --gain 50 \
+--mode "01" --vec_length 4096 --samp_rate 2048000 --gain 50 \
 --freq 1420000000 --n_integration 100 --n_samples 1000 \
---duration 300 --csvflag --fitflag
+--duration 300 --csv --FIT
 ```
 
 ## Exemplo de FlowGraph
