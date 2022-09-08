@@ -8,6 +8,7 @@ DATE: 24.04.2022
 """
 import argparse
 import signal
+import sys
 import time
 from PFB_Spectrometer import PFB_Spectrometer as PFB
 
