@@ -16,7 +16,7 @@ from radiotelescope.GNURadio.PFB_Spectrometer import PFB_Spectrometer as PFB
 def parse_args():
     parser = argparse.ArgumentParser(description="GNURADIO flowgraph controller."
         )
-    parser.add_argument("--rtlsdr", type=str, dest="rtl_string", help="Parâmetro para SDR", default="rtl=0")
+    parser.add_argument("--rtlsdr", type=str, dest="rtlsdr", help="Parâmetro para SDR", default="rtl=0")
     parser.add_argument("--name", type=str, dest="name", help="Caminho e nome do arquivo.", default="_")
     parser.add_argument("--mode", type=str, dest="mode", help="Modo de observação.", default="59")
     parser.add_argument("--vec_length", type=int, dest="vec_length", help="tamanho FFT", default=4096)
@@ -32,7 +32,7 @@ def parse_args():
 
 def main(args, top_block_cls=PFB, options=None):
 
-    PFB.rtl_string = args.rtl_string
+    PFB.rtl_string = args.rtlsdr
     PFB.name = args.name
     PFB.mode = args.mode
     PFB.vec_length = args.vec_length
@@ -47,7 +47,7 @@ def main(args, top_block_cls=PFB, options=None):
     duration = float(args.duration)
 
     tb = top_block_cls(vec_length=args.vec_length, samp_rate=args.samp_rate,
-                       rtl_string=args.rtl_string, name=args.name,
+                       rtl_string=args.rtlsdr, name=args.name,
                         n_samples=args.n_samples,
                         n_integration=args.n_integration, mode=args.mode,
                         gain=args.gain, freq=args.freq, fit=args.fit,
