@@ -24,32 +24,34 @@ from gnuradio import eng_notation
 import numpy as np
 import osmosdr
 import time
-
+#import rtlstring
 
 
 
 class PFB_Spectrometer(gr.top_block):
 
-    def __init__(self):
-        gr.top_block.__init__(self, "Spectrometer")
-
+    def __init__(self, vec_length=4096, samp_rate=2.048e6,
+                 rtl_string=None, name=None, n_samples=4096,
+                 n_integration=100, mode="59", gain=50, freq=1040e6, fit=True,
+                 csv=False):
+        gr.top_block.__init__(self, "Spectrometer", catch_exceptions=True)
         ##################################################
         # Variables
         ##################################################
-        self.vec_length = vec_length = 4096
+        self.vec_length = vec_length
         self.sinc_sample_locations = sinc_sample_locations = np.arange(-np.pi*4/2.0, np.pi*4/2.0, np.pi/vec_length)
         self.sinc = sinc = np.sinc(sinc_sample_locations/np.pi)
-        self.samp_rate = samp_rate = 2.048e6
-        self.rtl_string = rtl_string = "rtl=0"
-        self.name = name = "BINGO"
-        self.n_samples = n_samples = 100
-        self.n_integration = n_integration = 100
-        self.mode = mode = "01"
-        self.gain = gain = 50
-        self.freq = freq = 1040e6
-        self.fit = fit = True
+        self.samp_rate = samp_rate
+        self.rtl_string = rtl_string
+        self.name = name
+        self.n_samples = n_samples
+        self.n_integration = n_integration
+        self.mode = mode
+        self.gain = gain
+        self.freq = freq
+        self.fit = fit
         self.custom_window = custom_window = sinc*np.hamming(4*vec_length)
-        self.csv = csv = False
+        self.csv = csv
 
         ##################################################
         # Blocks
@@ -57,17 +59,16 @@ class PFB_Spectrometer(gr.top_block):
         self.osmosdr_source_0 = osmosdr.source(
             args="numchan=" + str(1) + " " + rtl_string
         )
-        self.osmosdr_source_0.set_time_source('gpsdo', 0)
         self.osmosdr_source_0.set_time_unknown_pps(osmosdr.time_spec_t())
         self.osmosdr_source_0.set_sample_rate(samp_rate)
-        self.osmosdr_source_0.set_center_freq(freq, 0)
+        self.osmosdr_source_0.set_center_freq(100e6, 0)
         self.osmosdr_source_0.set_freq_corr(0, 0)
         self.osmosdr_source_0.set_dc_offset_mode(0, 0)
         self.osmosdr_source_0.set_iq_balance_mode(0, 0)
         self.osmosdr_source_0.set_gain_mode(False, 0)
-        self.osmosdr_source_0.set_gain(0, 0)
-        self.osmosdr_source_0.set_if_gain(50, 0)
-        self.osmosdr_source_0.set_bb_gain(0, 0)
+        self.osmosdr_source_0.set_gain(10, 0)
+        self.osmosdr_source_0.set_if_gain(20, 0)
+        self.osmosdr_source_0.set_bb_gain(20, 0)
         self.osmosdr_source_0.set_antenna('', 0)
         self.osmosdr_source_0.set_bandwidth(0, 0)
         self.fits_sink_fits_sink_0 = fits_sink.fits_sink( vec_length, samp_rate, freq, name, n_samples, mode, False, True)
@@ -192,7 +193,6 @@ class PFB_Spectrometer(gr.top_block):
 
     def set_freq(self, freq):
         self.freq = freq
-        self.osmosdr_source_0.set_center_freq(self.freq, 0)
 
     def get_fit(self):
         return self.fit

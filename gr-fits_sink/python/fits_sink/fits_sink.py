@@ -72,7 +72,7 @@ class fits_sink(gr.sync_block):
     def save_csv(prefix, mode, START, data):
         DATE_START = START.strftime("%Y%m%d")
         TIME_START = START.strftime("%H%M%S")
-        filename = prefix + "_" + DATE_START + "_" + TIME_START + "_" + mode + ".csv"
+        filename = prefix + "_" + str(DATE_START) + "_" + str(TIME_START) + "_" + str(mode) + ".csv"
         np.savetxt(filename, data, delimiter = ",")
         return
 
@@ -113,7 +113,7 @@ class fits_sink(gr.sync_block):
         header["CTYPE1"] = 'Time [UT]'
         header["CTYPE2"] = 'Frequency [MHz]'
         time_array = np.arange(nint)
-        filename = prefix + "_" + DATE_START + "_" + TIME_START + "_" + mode + ".fit"
+        filename = prefix + "_" + str(DATE_START) + "_" + str(TIME_START) + "_" + str(mode) + ".fit"
         primary_HDU = fits.PrimaryHDU(header = header, data = data)
         table_hdu = fits.table_to_hdu(Table([[time_array], [frequencies / 1e6]], names = ("TIME", "FREQUENCY")))
         hdul = fits.HDUList([primary_HDU, table_hdu])
