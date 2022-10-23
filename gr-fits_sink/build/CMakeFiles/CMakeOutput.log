@@ -1,0 +1,497 @@
+The system is: Linux - 5.11.10-051110-generic - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++ 
+Build flags: -fvisibility-inlines-hidden;-std=c++17;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/opt/miniconda3/envs/gnuradio310/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/3.24.1/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc 
+Build flags: -march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/opt/miniconda3/envs/gnuradio310/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/3.24.1/CompilerIdC/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed231/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed231.dir/build.make CMakeFiles/cmTC_ed231.dir/build
+gmake[1]: Entering directory '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include    -v -o CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -c /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp
+Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.4.0 (conda-forge gcc 10.4.0-16) 
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/cc1plus -quiet -v -iprefix /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/ -isysroot /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /opt/miniconda3/envs/gnuradio310/include /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=nocona -mtune=haswell -auxbase-strip CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -O2 -std=c++17 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o
+GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1
+GNU C++17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include"
+ignoring nonexistent directory "/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed"
+ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/miniconda3/envs/gnuradio310/include
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/x86_64-conda-linux-gnu
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/backward
+ /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+GNU C++17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: bad8ad384d6ef156227242d27d640c10
+COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+Linking CXX executable cmTC_ed231
+/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed231.dir/link.txt --verbose=1
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/miniconda3/envs/gnuradio310/lib -Wl,-rpath-link,/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib -v CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ed231 
+Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++
+COLLECT_LTO_WRAPPER=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.4.0 (conda-forge gcc 10.4.0-16) 
+COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-L/opt/miniconda3/envs/gnuradio310/lib' '-v' '-o' 'cmTC_ed231' '-shared-libgcc'
+ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/collect2 -plugin /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/liblto_plugin.so -plugin-opt=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc01BWkF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ed231 /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o -L/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0 -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../.. -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /opt/miniconda3/envs/gnuradio310/lib -rpath-link /opt/miniconda3/envs/gnuradio310/lib CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /opt/miniconda3/envs/gnuradio310/lib
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-L/opt/miniconda3/envs/gnuradio310/lib' '-v' '-o' 'cmTC_ed231' '-shared-libgcc'
+gmake[1]: Leaving directory '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/miniconda3/envs/gnuradio310/include]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/x86_64-conda-linux-gnu]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/backward]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/include] ==> [/opt/miniconda3/envs/gnuradio310/include]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include/c++/10.4.0]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/x86_64-conda-linux-gnu] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include/c++/10.4.0/x86_64-conda-linux-gnu]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/backward] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include/c++/10.4.0/backward]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/include]
+  implicit include dirs: [/opt/miniconda3/envs/gnuradio310/include;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include/c++/10.4.0;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include/c++/10.4.0/x86_64-conda-linux-gnu;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include/c++/10.4.0/backward;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed231/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed231.dir/build.make CMakeFiles/cmTC_ed231.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include    -v -o CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -c /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.4.0 (conda-forge gcc 10.4.0-16) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/cc1plus -quiet -v -iprefix /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/ -isysroot /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /opt/miniconda3/envs/gnuradio310/include /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=nocona -mtune=haswell -auxbase-strip CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -O2 -std=c++17 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1]
+  ignore line: [GNU C++17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include"]
+  ignore line: [ignoring nonexistent directory "/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/include]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/x86_64-conda-linux-gnu]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/10.4.0/backward]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: bad8ad384d6ef156227242d27d640c10]
+  ignore line: [COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [Linking CXX executable cmTC_ed231]
+  ignore line: [/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed231.dir/link.txt --verbose=1]
+  ignore line: [/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /opt/miniconda3/envs/gnuradio310/lib -Wl -rpath-link /opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib -v CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ed231 ]
+  ignore line: [Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.4.0 (conda-forge gcc 10.4.0-16) ]
+  ignore line: [COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++17' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-L/opt/miniconda3/envs/gnuradio310/lib' '-v' '-o' 'cmTC_ed231' '-shared-libgcc']
+  link line: [ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/collect2 -plugin /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/liblto_plugin.so -plugin-opt=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc01BWkF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ed231 /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o -L/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0 -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../.. -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /opt/miniconda3/envs/gnuradio310/lib -rpath-link /opt/miniconda3/envs/gnuradio310/lib CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /opt/miniconda3/envs/gnuradio310/lib]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc01BWkF.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ed231] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o]
+    arg [-L/opt/miniconda3/envs/gnuradio310/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../..] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../..]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+    arg [-O2] ==> ignore
+    arg [--sort-common] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [--allow-shlib-undefined] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/lib] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/lib] ==> ignore
+    arg [CMakeFiles/cmTC_ed231.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [-rpath] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/lib] ==> ignore
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/lib] ==> [/opt/miniconda3/envs/gnuradio310/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib] ==> [/opt/miniconda3/envs/gnuradio310/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../..] ==> [/opt/miniconda3/envs/gnuradio310/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  implicit dirs: [/opt/miniconda3/envs/gnuradio310/lib;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0;/opt/miniconda3/envs/gnuradio310/lib/gcc;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/lib;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/lib;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d89d1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d89d1.dir/build.make CMakeFiles/cmTC_d89d1.dir/build
+gmake[1]: Entering directory '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include    -v -o CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -c /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCCompilerABI.c
+Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.4.0 (conda-forge gcc 10.4.0-16) 
+COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o' '-c'
+ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/cc1 -quiet -v -iprefix /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/ -isysroot /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot -isystem /opt/miniconda3/envs/gnuradio310/include /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=nocona -mtune=haswell -auxbase-strip CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o
+GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1
+GNU C17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include"
+ignoring nonexistent directory "/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed"
+ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/miniconda3/envs/gnuradio310/include
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed
+ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include
+ /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+GNU C17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 10.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 8afc6f277515d8a9a61950b6feed8d37
+COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o' '-c'
+Linking C executable cmTC_d89d1
+/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d89d1.dir/link.txt --verbose=1
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/miniconda3/envs/gnuradio310/lib -Wl,-rpath-link,/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib -v CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -o cmTC_d89d1 
+Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc
+COLLECT_LTO_WRAPPER=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.4.0 (conda-forge gcc 10.4.0-16) 
+COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-L/opt/miniconda3/envs/gnuradio310/lib' '-v' '-o' 'cmTC_d89d1'
+ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/collect2 -plugin /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/liblto_plugin.so -plugin-opt=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZk0Mg3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d89d1 /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o -L/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0 -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../.. -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /opt/miniconda3/envs/gnuradio310/lib -rpath-link /opt/miniconda3/envs/gnuradio310/lib CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /opt/miniconda3/envs/gnuradio310/lib
+COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-L/opt/miniconda3/envs/gnuradio310/lib' '-v' '-o' 'cmTC_d89d1'
+gmake[1]: Leaving directory '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/miniconda3/envs/gnuradio310/include]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include]
+    add: [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/include] ==> [/opt/miniconda3/envs/gnuradio310/include]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include]
+  collapse include dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/include]
+  implicit include dirs: [/opt/miniconda3/envs/gnuradio310/include;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/include;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d89d1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d89d1.dir/build.make CMakeFiles/cmTC_d89d1.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include    -v -o CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -c /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCCompilerABI.c]
+  ignore line: [Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.4.0 (conda-forge gcc 10.4.0-16) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/cc1 -quiet -v -iprefix /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/ -isysroot /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot -isystem /opt/miniconda3/envs/gnuradio310/include /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=nocona -mtune=haswell -auxbase-strip CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o - |]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1]
+  ignore line: [GNU C17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include"]
+  ignore line: [ignoring nonexistent directory "/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/include]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/include-fixed]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (conda-forge gcc 10.4.0-16) version 10.4.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 8afc6f277515d8a9a61950b6feed8d37]
+  ignore line: [COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-v' '-o' 'CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [Linking C executable cmTC_d89d1]
+  ignore line: [/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d89d1.dir/link.txt --verbose=1]
+  ignore line: [/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /opt/miniconda3/envs/gnuradio310/lib -Wl -rpath-link /opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib -v CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -o cmTC_d89d1 ]
+  ignore line: [Reading specs from /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1658951349035/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/10.4.0 --with-pkgversion='conda-forge gcc 10.4.0-16' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.4.0 (conda-forge gcc 10.4.0-16) ]
+  ignore line: [COMPILER_PATH=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/:/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/opt/miniconda3/envs/gnuradio310/include' '-L/opt/miniconda3/envs/gnuradio310/lib' '-v' '-o' 'cmTC_d89d1']
+  link line: [ /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/collect2 -plugin /opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/liblto_plugin.so -plugin-opt=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZk0Mg3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d89d1 /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o -L/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0 -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib -L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../.. -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /opt/miniconda3/envs/gnuradio310/lib -rpath-link /opt/miniconda3/envs/gnuradio310/lib CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o /opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /opt/miniconda3/envs/gnuradio310/lib]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/miniconda3/envs/gnuradio310/bin/../libexec/gcc/x86_64-conda-linux-gnu/10.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccZk0Mg3.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d89d1] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o]
+    arg [-L/opt/miniconda3/envs/gnuradio310/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../..] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../..]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+    arg [-L/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+    arg [-O2] ==> ignore
+    arg [--sort-common] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [--allow-shlib-undefined] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/lib] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/lib] ==> ignore
+    arg [CMakeFiles/cmTC_d89d1.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o]
+    arg [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [-rpath] ==> ignore
+    arg [/opt/miniconda3/envs/gnuradio310/lib] ==> ignore
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o]
+  collapse obj [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/lib] ==> [/opt/miniconda3/envs/gnuradio310/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc] ==> [/opt/miniconda3/envs/gnuradio310/lib/gcc]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../lib] ==> [/opt/miniconda3/envs/gnuradio310/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../..] ==> [/opt/miniconda3/envs/gnuradio310/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/opt/miniconda3/envs/gnuradio310/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtbeginS.o;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0/crtendS.o;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  implicit dirs: [/opt/miniconda3/envs/gnuradio310/lib;/opt/miniconda3/envs/gnuradio310/lib/gcc/x86_64-conda-linux-gnu/10.4.0;/opt/miniconda3/envs/gnuradio310/lib/gcc;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/lib;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/lib;/opt/miniconda3/envs/gnuradio310/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_35cea/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_35cea.dir/build.make CMakeFiles/cmTC_35cea.dir/build
+gmake[1]: Entrando no diretório '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35cea.dir/CheckFunctionExists.c.o
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_35cea.dir/CheckFunctionExists.c.o -c /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_35cea
+/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35cea.dir/link.txt --verbose=1
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/miniconda3/envs/gnuradio310/lib -Wl,-rpath-link,/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib  CMakeFiles/cmTC_35cea.dir/CheckFunctionExists.c.o -o cmTC_35cea  -lpthread 
+gmake[1]: Saindo do diretório '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
+
+
+

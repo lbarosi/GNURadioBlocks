@@ -16,14 +16,15 @@ import pathlib
 import threading
 import time
 
+# Logger
+#logger = logging.getLogger()
+#logger.addHandler(logging.NullHandler())
 # -------------------------------------
+
 class fits_sink(gr.sync_block):
     """
-    Class fits_sink.
-    
     This block is controlled by the string variable save_toggle: if save_toggle = "True" (a string, not boolean), the data is written to a new .csv file every new integration time. The minimum integration time for the block to work is 0.1 s.
     """
-
     def __init__(self, vec_length, samp_rate, freq, prefix, n_samples, mode, csv, fit):
         gr.sync_block.__init__(self,
             name="fits_sink",

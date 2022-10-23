@@ -11,7 +11,7 @@ options:
     gen_linking: dynamic
     generate_options: no_gui
     hier_block_src_path: '.:'
-    id: PFB_Spectrometer
+    id: PFB_Spectrometer_tcp
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -37,7 +37,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 'False'
+    value: 'True'
   states:
     bus_sink: false
     bus_source: false
@@ -145,7 +145,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '"rtl=0"'
+    value: '"rtl_tcp=192.168.15.81:1234"'
   states:
     bus_sink: false
     bus_source: false
@@ -247,7 +247,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [240, 208.0]
+    coordinate: [184, 208.0]
     rotation: 0
     state: true
 - name: blocks_delay_0
@@ -496,19 +496,19 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    csv: 'False'
-    fit: 'True'
+    csv: csv
+    fit: fit
     freq: freq
     mode: mode
     n_samples: n_samples
-    prefix: name
+    prefix: prefix
     samp_rate: samp_rate
     vec_length: vec_length
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [968, 468.0]
+    coordinate: [960, 468.0]
     rotation: 180
     state: true
 - name: import_0
@@ -562,7 +562,7 @@ blocks:
     ant8: ''
     ant9: ''
     args: rtl_string
-    bb_gain0: '0'
+    bb_gain0: '20'
     bb_gain1: '20'
     bb_gain10: '20'
     bb_gain11: '20'
@@ -699,7 +699,7 @@ blocks:
     dc_offset_mode7: '0'
     dc_offset_mode8: '0'
     dc_offset_mode9: '0'
-    freq0: freq
+    freq0: 100e6
     freq1: 100e6
     freq10: 100e6
     freq11: 100e6
@@ -731,7 +731,7 @@ blocks:
     freq7: 100e6
     freq8: 100e6
     freq9: 100e6
-    gain0: '0'
+    gain0: '10'
     gain1: '10'
     gain10: '10'
     gain11: '10'
@@ -795,7 +795,7 @@ blocks:
     gain_mode7: 'False'
     gain_mode8: 'False'
     gain_mode9: 'False'
-    if_gain0: '50'
+    if_gain0: '20'
     if_gain1: '20'
     if_gain10: '20'
     if_gain11: '20'
@@ -865,7 +865,7 @@ blocks:
     num_mboards: '1'
     sample_rate: samp_rate
     sync: sync
-    time_source0: gpsdo
+    time_source0: ''
     time_source1: ''
     time_source2: ''
     time_source3: ''
@@ -878,9 +878,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [224, 276.0]
+    coordinate: [176, 276.0]
     rotation: 180
-    state: enabled
+    state: true
 
 connections:
 - [blocks_add_xx_0, '0', fft_vxx_0, '0']
@@ -906,4 +906,4 @@ connections:
 
 metadata:
   file_format: 1
-  grc_version: 3.10.2.0
+  grc_version: 3.10.3.0
