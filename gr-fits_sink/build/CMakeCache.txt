@@ -281,7 +281,7 @@ PYTHON_LIBRARY:FILEPATH=/opt/miniconda3/envs/gnuradio310/lib/libpython3.10.so
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //NumPy include directory
-Python_NumPy_INCLUDE_DIR:FILEPATH=/opt/miniconda3/envs/gnuradio310/lib/python3.10/site-packages/numpy/core/include
+Python_NumPy_INCLUDE_DIR:FILEPATH=/home/lbarosi/.local/lib/python3.10/site-packages/numpy/core/include
 
 //python interpreter for QA tests
 QA_PYTHON_EXECUTABLE:FILEPATH=/opt/miniconda3/envs/gnuradio310/bin/python

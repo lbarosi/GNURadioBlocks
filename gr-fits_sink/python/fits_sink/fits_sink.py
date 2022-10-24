@@ -16,11 +16,15 @@ import pathlib
 import threading
 import time
 
+# Preparando log ----------------------
+logger = logging.getLogger(__name__)
+# -------------------------------------
+
 # -------------------------------------
 class fits_sink(gr.sync_block):
     """
     Class fits_sink.
-    
+
     This block is controlled by the string variable save_toggle: if save_toggle = "True" (a string, not boolean), the data is written to a new .csv file every new integration time. The minimum integration time for the block to work is 0.1 s.
     """
 
@@ -41,18 +45,19 @@ class fits_sink(gr.sync_block):
         self.mode = mode
         self.csv = csv
         self.fit = fit
-        print("FITS_SINK iniciado")
-        print("Frequencia central = {}".format(freq))
-        print("FITS {}".format(fit))
-        print("CSV {}".format(csv))
+        self.timevector = np.empty(self.n_samples)
+        self.START = self.set_TIME()
+        self.time_start = time.perf_counter()
+
 
     def work(self, input_items, output_items):
 
         in0_buffer = input_items[0]
-        self.START = self.set_TIME()
+
         for in0 in in0_buffer:
         # <+signal processing here+>
             self.data[self.nint,:] = np.round(in0, decimals=4)
+            self.timevector[self.nint] = time.perf_counter() - self.time_start
             self.nint = self.nint + 1
             if self.nint == self.n_samples:
                 END = self.set_TIME()
@@ -60,10 +65,13 @@ class fits_sink(gr.sync_block):
                     saving = threading.Thread(target=fits_sink.save_csv, args=(self.prefix,  self.mode, self.START, self.data), daemon=True)
                     saving.start()
                 if self.fit is True:
-                    saving = threading.Thread(target=fits_sink.save_FITS, args=(self.prefix, self.mode, self.START, END, self.nint, self.frequencies, self.data))
+                    saving = threading.Thread(target=fits_sink.save_FITS, args=(self.prefix, self.mode, self.START, END, self.nint, self.frequencies, self.data, self.timevector))
                     saving.start()
                 self.data = np.empty((self.n_samples, self.vec_length))
+                self.timevector = np.empty(self.n_samples)
                 self.nint = 0
+                self.time_start = time.perf_counter()
+                self.START = self.set_TIME()
         return len(input_items[0])
 
     def stop(self):
@@ -72,22 +80,16 @@ class fits_sink(gr.sync_block):
             saving = threading.Thread(target=fits_sink.save_csv, args=(self.prefix,  self.mode, self.START, self.data), daemon=True)
             saving.start()
         if self.fit is True:
-            saving = threading.Thread(target=fits_sink.save_FITS, args=(self.prefix,  self.mode, self.START, END, self.nint, self.frequencies, self.data))
+            saving = threading.Thread(target=fits_sink.save_FITS, args=(self.prefix,  self.mode, self.START, END, self.nint, self.frequencies, self.data, self.timevector))
             saving.start()
         self.data = np.empty((self.n_samples, self.vec_length))
         self.nint = 0
         return
 
     def save_csv(prefix, mode, START, data):
-<<<<<<< HEAD
         DATE_START_name = START.strftime("%Y%m%d")
         TIME_START_name = START.strftime("%H%M%S")
         filename = prefix + "_" + str(DATE_START_name) + "_" + str(TIME_START_name) + "_" + str(mode) + ".csv"
-=======
-        DATE_START = START.strftime("%Y%m%d")
-        TIME_START = START.strftime("%H%M%S")
-        filename = prefix + "_" + str(DATE_START) + "_" + str(TIME_START) + "_" + str(mode) + ".csv"
->>>>>>> e5ba5ac40000e679b2dffe0fd9c72de9375a8a39
         np.savetxt(filename, data, delimiter = ",")
         print("Arquivo {} salvo com sucesso.".format(filename))
         return
@@ -96,7 +98,7 @@ class fits_sink(gr.sync_block):
         NOW = datetime.now()
         return NOW
 
-    def save_FITS(prefix, mode, START, END, nint, frequencies, data):
+    def save_FITS(prefix, mode, START, END, nint, frequencies, data, timevector):
         DATE_START = START.strftime("%Y%m%d")
         TIME_START = START.strftime("%H%M%S.%f")
         DATE_END = END.strftime("%Y%m%d")
@@ -128,16 +130,11 @@ class fits_sink(gr.sync_block):
         header["BUNIT"] = 'digits'
         header["CTYPE1"] = 'Time [UT]'
         header["CTYPE2"] = 'Frequency [MHz]'
-        time_array = np.arange(nint)
-<<<<<<< HEAD
         DATE_START_name = START.strftime("%Y%m%d")
         TIME_START_name = START.strftime("%H%M%S")
         filename = prefix + "_" + str(DATE_START_name) + "_" + str(TIME_START_name) + "_" + str(mode) + ".fit"
         primary_HDU = fits.PrimaryHDU(header = header, data = data[0:nint, :])
-=======
-        filename = prefix + "_" + str(DATE_START) + "_" + str(TIME_START) + "_" + str(mode) + ".fit"
-        primary_HDU = fits.PrimaryHDU(header = header, data = data)
->>>>>>> e5ba5ac40000e679b2dffe0fd9c72de9375a8a39
+        time_array = (timevector[0:nint])
         table_hdu = fits.table_to_hdu(Table([[time_array], [frequencies / 1e6]], names = ("TIME", "FREQUENCY")))
         hdul = fits.HDUList([primary_HDU, table_hdu])
         pathlib.Path(filename).parents[0].mkdir(parents=True, exist_ok=True)
