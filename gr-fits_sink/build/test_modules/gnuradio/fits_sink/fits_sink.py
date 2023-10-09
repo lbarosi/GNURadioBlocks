@@ -6,6 +6,8 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 # SINK CVS grava n_samples medidas por vez em csv file.
 # Tempo nas linhas, frequencias nas colunas.
+from astropy.time import Time
+import astropy.units as u
 from astropy.io import fits
 from astropy.table import Table
 from datetime import datetime
@@ -15,6 +17,7 @@ import numpy as np
 import pathlib
 import threading
 import time
+import pytz
 
 # Preparando log ----------------------
 logger = logging.getLogger(__name__)
@@ -28,7 +31,7 @@ class fits_sink(gr.sync_block):
     This block is controlled by the string variable save_toggle: if save_toggle = "True" (a string, not boolean), the data is written to a new .csv file every new integration time. The minimum integration time for the block to work is 0.1 s.
     """
 
-    def __init__(self, vec_length, samp_rate, freq, prefix, n_samples, mode, csv, fit):
+    def __init__(self, vec_length, samp_rate, freq, prefix, n_samples, mode, fit, tz, lat, lon, heigth, Alt, Az):
         gr.sync_block.__init__(self,
             name="fits_sink",
             in_sig=[(np.float32, int(vec_length))],
@@ -43,11 +46,16 @@ class fits_sink(gr.sync_block):
         self.data = np.empty((self.n_samples, self.vec_length))
         self.nint = 0
         self.mode = mode
-        self.csv = csv
         self.fit = fit
         self.timevector = np.empty(self.n_samples)
         self.START = self.set_TIME()
         self.time_start = time.perf_counter()
+        self.timezone = pytz.timezone(tz)
+        self.lat = lat
+        self.lon = lon
+        self.heigth = heigth
+        self.Alt = Alt
+        self.Az = Az
 
 
     def work(self, input_items, output_items):
@@ -57,52 +65,43 @@ class fits_sink(gr.sync_block):
         for in0 in in0_buffer:
         # <+signal processing here+>
             self.data[self.nint,:] = np.round(in0, decimals=4)
-            self.timevector[self.nint] = time.perf_counter() - self.time_start
+            self.timevector[self.nint] = time.perf_counter_ns() - self.time_start
             self.nint = self.nint + 1
             if self.nint == self.n_samples:
                 END = self.set_TIME()
-                if self.csv is True:
-                    saving = threading.Thread(target=fits_sink.save_csv, args=(self.prefix,  self.mode, self.START, self.data), daemon=True)
-                    saving.start()
                 if self.fit is True:
-                    saving = threading.Thread(target=fits_sink.save_FITS, args=(self.prefix, self.mode, self.START, END, self.nint, self.frequencies, self.data, self.timevector))
+                    saving = threading.Thread(target=self.save_FITS, args=(self.prefix, self.mode, self.START, END, self.nint, self.frequencies, self.data, self.timevector))
                     saving.start()
                 self.data = np.empty((self.n_samples, self.vec_length))
                 self.timevector = np.empty(self.n_samples)
                 self.nint = 0
-                self.time_start = time.perf_counter()
+                self.time_start = time.perf_counter_ns()
                 self.START = self.set_TIME()
         return len(input_items[0])
 
     def stop(self):
         END = self.set_TIME()
-        if self.csv is True:
-            saving = threading.Thread(target=fits_sink.save_csv, args=(self.prefix,  self.mode, self.START, self.data), daemon=True)
-            saving.start()
         if self.fit is True:
-            saving = threading.Thread(target=fits_sink.save_FITS, args=(self.prefix,  self.mode, self.START, END, self.nint, self.frequencies, self.data, self.timevector))
+            saving = threading.Thread(target=self.save_FITS, args=(self.prefix,  self.mode, self.START, END, self.nint, self.frequencies, self.data, self.timevector))
             saving.start()
         self.data = np.empty((self.n_samples, self.vec_length))
         self.nint = 0
         return
 
-    def save_csv(prefix, mode, START, data):
-        DATE_START_name = START.strftime("%Y%m%d")
-        TIME_START_name = START.strftime("%H%M%S")
-        filename = prefix + "_" + str(DATE_START_name) + "_" + str(TIME_START_name) + "_" + str(mode) + ".csv"
-        np.savetxt(filename, data, delimiter = ",")
-        print("Arquivo {} salvo com sucesso.".format(filename))
-        return
-
     def set_TIME(self):
-        NOW = datetime.now()
+        NOW = Time.now()
         return NOW
 
-    def save_FITS(prefix, mode, START, END, nint, frequencies, data, timevector):
+    def save_FITS(self, prefix, mode, START, END, nint, frequencies,
+                 data, timevector):
+        START_ = START
+        END_ = END
+        START = self.timezone.localize(START.to_datetime())
+        END = self.timezone.localize(END.to_datetime())
         DATE_START = START.strftime("%Y%m%d")
         TIME_START = START.strftime("%H%M%S.%f")
         DATE_END = END.strftime("%Y%m%d")
-        TIME_END =  END.strftime("%H%M%S.%f")
+        TIME_END = END.strftime("%H%M%S.%f")
         time_size = nint
         freq_size = frequencies.size
         header = fits.Header()
@@ -127,15 +126,24 @@ class fits_sink(gr.sync_block):
         header["TIME-END"] = TIME_END
         header["BZERO"] = 0.
         header["BSCALE"] = 1.
-        header["BUNIT"] = 'digits'
-        header["CTYPE1"] = 'Time [UT]'
+        header["BUNIT"] = 'dB (ADU)'
+        header["CTYPE1"] = 'Time [JD]'
         header["CTYPE2"] = 'Frequency [MHz]'
+        header["MINFREQ"] = frequencies.min()
+        header["MAXFREQ"] = frequencies.max()
+        header["JULSTART"] = START_.tai.jd
+        header["JULEND"] = END_.tai.jd
+        header["OBS_LAT"] = self.lat
+        header["OBS_LON"] = self.lon
+        header["OBS_ALT"] = self.heigth
+        header["OBS_Alt"] = self.Alt
+        header["OBS_Az"] = self.Az
         DATE_START_name = START.strftime("%Y%m%d")
         TIME_START_name = START.strftime("%H%M%S")
         filename = prefix + "_" + str(DATE_START_name) + "_" + str(TIME_START_name) + "_" + str(mode) + ".fit"
-        primary_HDU = fits.PrimaryHDU(header = header, data = data[0:nint, :])
-        time_array = (timevector[0:nint])
-        table_hdu = fits.table_to_hdu(Table([[time_array], [frequencies / 1e6]], names = ("TIME", "FREQUENCY")))
+        primary_HDU = fits.PrimaryHDU(header=header, data=data[0:nint, :])
+        time_array = (START_ + (timevector[0:nint]) * (1e-9 * u.s)).tai.jd
+        table_hdu = fits.table_to_hdu(Table([[time_array], [frequencies / 1e6]], names=("TIME", "FREQUENCY")))
         hdul = fits.HDUList([primary_HDU, table_hdu])
         pathlib.Path(filename).parents[0].mkdir(parents=True, exist_ok=True)
         hdul.writeto(filename)

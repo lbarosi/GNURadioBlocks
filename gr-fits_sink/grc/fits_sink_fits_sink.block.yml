@@ -4,7 +4,7 @@ category: '[fits_sink]'
 
 templates:
   imports: from gnuradio import fits_sink
-  make: fits_sink.fits_sink( ${vec_length}, ${samp_rate}, ${freq}, ${prefix}, ${n_samples}, ${mode}, ${csv}, ${fit})
+  make: fits_sink.fits_sink( ${vec_length}, ${samp_rate}, ${freq}, ${prefix}, ${n_samples}, ${mode}, ${fit}, ${tz}, ${lat}, ${lon}, ${heigth}, ${Alt}, ${Az})
 
 #  Make one 'parameters' list entry for every parameter you want settable from the GUI.
 #     Keys include:
@@ -30,12 +30,33 @@ parameters:
 - id: mode
   label: mode
   dtype: string
-- id: csv
-  label: csv
-  dtype: bool
 - id: fit
   label: fit
   dtype: bool
+- id: tz
+  label: tz
+  dtype: string
+  default: "America/Recife"
+- id: lat
+  label: lat
+  dtype: float
+  default: "-7.2117"
+- id: lon
+  label: lon
+  dtype: float
+  default: "-35.9081"
+- id: heigth
+  label: heigth
+  dtype: float
+  default: "553"
+- id: Alt
+  label: Alt
+  dtype: float
+  default: "84"
+- id: Az
+  label: Az
+  dtype: float
+  default: "0.0"
 
 #  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
 #  Keys include:
