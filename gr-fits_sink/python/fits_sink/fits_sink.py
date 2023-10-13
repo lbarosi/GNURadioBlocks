@@ -31,7 +31,7 @@ class fits_sink(gr.sync_block):
     This block is controlled by the string variable save_toggle: if save_toggle = "True" (a string, not boolean), the data is written to a new .csv file every new integration time. The minimum integration time for the block to work is 0.1 s.
     """
 
-    def __init__(self, vec_length, samp_rate, freq, prefix, n_samples, mode, fit, tz, lat, lon, heigth, Alt, Az):
+    def __init__(self, vec_length, samp_rate, freq, prefix, n_samples, mode, fit, tz, lat, lon, heigth, Alt, Az, Instr, Teles):
         gr.sync_block.__init__(self,
             name="fits_sink",
             in_sig=[(np.float32, int(vec_length))],
@@ -56,6 +56,8 @@ class fits_sink(gr.sync_block):
         self.heigth = heigth
         self.Alt = Alt
         self.Az = Az
+        self.Instr = Instr
+        self.Teles = Teles
 
 
     def work(self, input_items, output_items):
@@ -118,8 +120,8 @@ class fits_sink(gr.sync_block):
         header["DATE"] = DATE_START
         header["CONTENT"] = "Radio flux density - " + str(prefix)
         header["ORIGIN"] = "PB"
-        header["TELESCOP"] = str(prefix)
-        header["INSTRUME"] = str(prefix)
+        header["TELESCOP"] = str(self.Teles)
+        header["INSTRUME"] = str(self.Instr)
         header["DATE-OBS"] = DATE_START
         header["TIME-OBS"] = TIME_START
         header["DATE-END"] = DATE_END
@@ -128,14 +130,14 @@ class fits_sink(gr.sync_block):
         header["BSCALE"] = 1.
         header["BUNIT"] = 'dB (ADU)'
         header["CTYPE1"] = 'Time [JD]'
-        header["CTYPE2"] = 'Frequency [MHz]'
+        header["CTYPE2"] = 'Frequency [Hz]'
         header["MINFREQ"] = frequencies.min()
         header["MAXFREQ"] = frequencies.max()
         header["JULSTART"] = START_.tai.jd
         header["JULEND"] = END_.tai.jd
         header["OBS_LAT"] = self.lat
         header["OBS_LON"] = self.lon
-        header["OBS_ALT"] = self.heigth
+        header["OBS_HGT"] = self.heigth
         header["OBS_Alt"] = self.Alt
         header["OBS_Az"] = self.Az
         DATE_START_name = START.strftime("%Y%m%d")
