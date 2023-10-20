@@ -77,8 +77,8 @@ class fits_sink(gr.sync_block):
                 self.data = np.empty((self.n_samples, self.vec_length))
                 self.timevector = np.empty(self.n_samples)
                 self.nint = 0
-                self.time_start = time.perf_counter_ns()
                 self.START = self.set_TIME()
+            self.time_start = time.perf_counter_ns()
         return len(input_items[0])
 
     def stop(self):
@@ -129,8 +129,8 @@ class fits_sink(gr.sync_block):
         header["BZERO"] = 0.
         header["BSCALE"] = 1.
         header["BUNIT"] = 'dB (ADU)'
-        header["CTYPE1"] = 'Time [JD]'
-        header["CTYPE2"] = 'Frequency [Hz]'
+        header["CTYPE1"] = 'Time [s]'
+        header["CTYPE2"] = 'Frequency [MHz]'
         header["MINFREQ"] = frequencies.min()
         header["MAXFREQ"] = frequencies.max()
         header["JULSTART"] = START_.tai.jd
@@ -143,9 +143,9 @@ class fits_sink(gr.sync_block):
         DATE_START_name = START.strftime("%Y%m%d")
         TIME_START_name = START.strftime("%H%M%S")
         filename = prefix + "_" + str(DATE_START_name) + "_" + str(TIME_START_name) + "_" + str(mode) + ".fit"
-        primary_HDU = fits.PrimaryHDU(header=header, data=data[0:nint, :])
-        time_array = (START_ + (timevector[0:nint]) * (1e-9 * u.s)).tai.jd
-        table_hdu = fits.table_to_hdu(Table([[time_array], [frequencies / 1e6]], names=("TIME", "FREQUENCY")))
+        primary_HDU = fits.PrimaryHDU(header=header, data=(data[0:nint, :]).astype(float32))
+        time_array = (timevector[0:nint]) * (1e-9)).astype(float32)
+        table_hdu = fits.table_to_hdu(Table([[time_array], [(frequencies / 1e6),astype(float32)]], names=("TIME", "FREQUENCY")))
         hdul = fits.HDUList([primary_HDU, table_hdu])
         pathlib.Path(filename).parents[0].mkdir(parents=True, exist_ok=True)
         hdul.writeto(filename)
