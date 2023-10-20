@@ -78,7 +78,7 @@ class fits_sink(gr.sync_block):
                 self.timevector = np.empty(self.n_samples)
                 self.nint = 0
                 self.START = self.set_TIME()
-            self.time_start = time.perf_counter_ns()
+                self.time_start = time.perf_counter_ns()
         return len(input_items[0])
 
     def stop(self):
