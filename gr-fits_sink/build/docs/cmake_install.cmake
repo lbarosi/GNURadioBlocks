@@ -1,4 +1,4 @@
-# Install script for directory: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/docs
+# Install script for directory: /home/bingo/clones/GNURadioBlocks/gr-fits_sink/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/docs/doxygen/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/docs/doxygen/cmake_install.cmake")
 
 endif()
 

@@ -1,23 +1,23 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp
+Change Dir: /home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-vlKgxT
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f6e2d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f6e2d.dir/build.make CMakeFiles/cmTC_f6e2d.dir/build
-gmake[1]: Entrando no diretório '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f6e2d.dir/src.c.o
-/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -DCMAKE_HAVE_LIBC_PTHREAD  -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -o CMakeFiles/cmTC_f6e2d.dir/src.c.o -c /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_f6e2d
-/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6e2d.dir/link.txt --verbose=1
-/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/miniconda3/envs/gnuradio310/lib -Wl,-rpath-link,/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib  CMakeFiles/cmTC_f6e2d.dir/src.c.o -o cmTC_f6e2d 
-/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: CMakeFiles/cmTC_f6e2d.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_83bde/fast && /usr/bin/make  -f CMakeFiles/cmTC_83bde.dir/build.make CMakeFiles/cmTC_83bde.dir/build
+make[1]: Entrando no diretório '/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-vlKgxT'
+Building C object CMakeFiles/cmTC_83bde.dir/src.c.o
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -DCMAKE_HAVE_LIBC_PTHREAD  -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -o CMakeFiles/cmTC_83bde.dir/src.c.o -c /home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-vlKgxT/src.c
+Linking C executable cmTC_83bde
+/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83bde.dir/link.txt --verbose=1
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/miniconda3/envs/gnuradio310/lib -Wl,-rpath-link,/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib  CMakeFiles/cmTC_83bde.dir/src.c.o -o cmTC_83bde 
+/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: CMakeFiles/cmTC_83bde.dir/src.c.o: in function `main':
 src.c:(.text.startup.main+0x24): undefined reference to `pthread_create'
 /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x2e): undefined reference to `pthread_detach'
 /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x38): undefined reference to `pthread_cancel'
 /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x44): undefined reference to `pthread_join'
 /opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text.startup.main+0x50): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_f6e2d.dir/build.make:99: cmTC_f6e2d] Erro 1
-gmake[1]: Saindo do diretório '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_f6e2d/fast] Erro 2
+make[1]: *** [CMakeFiles/cmTC_83bde.dir/build.make:99: cmTC_83bde] Erro 1
+make[1]: Saindo do diretório '/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-vlKgxT'
+make: *** [Makefile:127: cmTC_83bde/fast] Erro 2
 
 
 Source file was:
@@ -41,21 +41,22 @@ int main(void)
   return 0;
 }
 
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cc834/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc834.dir/build.make CMakeFiles/cmTC_cc834.dir/build
-gmake[1]: Entrando no diretório '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cc834.dir/CheckFunctionExists.c.o
-/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_cc834.dir/CheckFunctionExists.c.o -c /opt/miniconda3/envs/gnuradio310/share/cmake-3.24/Modules/CheckFunctionExists.c
-Linking C executable cmTC_cc834
-/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc834.dir/link.txt --verbose=1
-/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/miniconda3/envs/gnuradio310/lib -Wl,-rpath-link,/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib  CMakeFiles/cmTC_cc834.dir/CheckFunctionExists.c.o -o cmTC_cc834  -lpthreads 
-/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: cannot find -lpthreads
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-Gga1dT
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_83b83/fast && /usr/bin/make  -f CMakeFiles/cmTC_83b83.dir/build.make CMakeFiles/cmTC_83b83.dir/build
+make[1]: Entrando no diretório '/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-Gga1dT'
+Building C object CMakeFiles/cmTC_83b83.dir/CheckFunctionExists.c.o
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_83b83.dir/CheckFunctionExists.c.o -c /home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-Gga1dT/CheckFunctionExists.c
+Linking C executable cmTC_83b83
+/opt/miniconda3/envs/gnuradio310/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83b83.dir/link.txt --verbose=1
+/opt/miniconda3/envs/gnuradio310/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /opt/miniconda3/envs/gnuradio310/include -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/miniconda3/envs/gnuradio310/lib -Wl,-rpath-link,/opt/miniconda3/envs/gnuradio310/lib -L/opt/miniconda3/envs/gnuradio310/lib  CMakeFiles/cmTC_83b83.dir/CheckFunctionExists.c.o -o cmTC_83b83  -lpthreads 
+/opt/miniconda3/envs/gnuradio310/bin/../lib/gcc/x86_64-conda-linux-gnu/10.4.0/../../../../x86_64-conda-linux-gnu/bin/ld: cannot find -lpthreads: Arquivo ou diretório inexistente
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_cc834.dir/build.make:99: cmTC_cc834] Erro 1
-gmake[1]: Saindo do diretório '/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_cc834/fast] Erro 2
+make[1]: *** [CMakeFiles/cmTC_83b83.dir/build.make:99: cmTC_83b83] Erro 1
+make[1]: Saindo do diretório '/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/CMakeFiles/CMakeScratch/TryCompile-Gga1dT'
+make: *** [Makefile:127: cmTC_83b83/fast] Erro 2
 
 
 

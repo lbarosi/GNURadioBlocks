@@ -143,9 +143,9 @@ class fits_sink(gr.sync_block):
         DATE_START_name = START.strftime("%Y%m%d")
         TIME_START_name = START.strftime("%H%M%S")
         filename = prefix + "_" + str(DATE_START_name) + "_" + str(TIME_START_name) + "_" + str(mode) + ".fit"
-        primary_HDU = fits.PrimaryHDU(header=header, data=(data[0:nint, :]).astype(float32))
-        time_array = (timevector[0:nint]) * (1e-9)).astype(float32)
-        table_hdu = fits.table_to_hdu(Table([[time_array], [(frequencies / 1e6),astype(float32)]], names=("TIME", "FREQUENCY")))
+        primary_HDU = fits.PrimaryHDU(header=header, data=(data[0:nint, :]).astype(np.float32))
+        time_array = ((timevector[0:nint]) * (1e-9)).astype(np.float32)
+        table_hdu = fits.table_to_hdu(Table([[time_array], [(frequencies / 1e6).astype(np.float32)]], names=("TIME", "FREQUENCY")))
         hdul = fits.HDUList([primary_HDU, table_hdu])
         pathlib.Path(filename).parents[0].mkdir(parents=True, exist_ok=True)
         hdul.writeto(filename)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/python/fits_sink/bindings
+# Install script for directory: /home/bingo/clones/GNURadioBlocks/gr-fits_sink/python/fits_sink/bindings
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

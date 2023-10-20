@@ -1,4 +1,4 @@
-# Install script for directory: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/docs/doxygen
+# Install script for directory: /home/bingo/clones/GNURadioBlocks/gr-fits_sink/docs/doxygen
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gr-fits_sink" TYPE DIRECTORY FILES
-    "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/docs/doxygen/xml"
-    "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/docs/doxygen/html"
+    "/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/docs/doxygen/xml"
+    "/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/docs/doxygen/html"
     )
 endif()
 

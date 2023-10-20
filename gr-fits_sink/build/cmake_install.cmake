@@ -1,4 +1,4 @@
-# Install script for directory: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink
+# Install script for directory: /home/bingo/clones/GNURadioBlocks/gr-fits_sink
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,17 +43,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/gnuradio-fits_sink" TYPE FILE FILES "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/cmake/Modules/gnuradio-fits_sinkConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/gnuradio-fits_sink" TYPE FILE FILES "/home/bingo/clones/GNURadioBlocks/gr-fits_sink/cmake/Modules/gnuradio-fits_sinkConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/include/gnuradio/fits_sink/cmake_install.cmake")
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/lib/cmake_install.cmake")
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/apps/cmake_install.cmake")
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/docs/cmake_install.cmake")
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/python/fits_sink/cmake_install.cmake")
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/grc/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/include/gnuradio/fits_sink/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/lib/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/apps/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/docs/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/python/fits_sink/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/grc/cmake_install.cmake")
 
 endif()
 
@@ -65,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

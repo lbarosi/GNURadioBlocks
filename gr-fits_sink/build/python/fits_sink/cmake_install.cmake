@@ -1,4 +1,4 @@
-# Install script for directory: /home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/python/fits_sink
+# Install script for directory: /home/bingo/clones/GNURadioBlocks/gr-fits_sink/python/fits_sink
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,14 +44,14 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.10/site-packages/gnuradio/fits_sink" TYPE FILE FILES
-    "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/python/fits_sink/__init__.py"
-    "/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/python/fits_sink/fits_sink.py"
+    "/home/bingo/clones/GNURadioBlocks/gr-fits_sink/python/fits_sink/__init__.py"
+    "/home/bingo/clones/GNURadioBlocks/gr-fits_sink/python/fits_sink/fits_sink.py"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lbarosi/BAROSI/HOME/6000_PYTHONIA/2_Doing/Clones/GNURadioBlocks/gr-fits_sink/build/python/fits_sink/bindings/cmake_install.cmake")
+  include("/home/bingo/clones/GNURadioBlocks/gr-fits_sink/build/python/fits_sink/bindings/cmake_install.cmake")
 
 endif()
 
