@@ -49,7 +49,7 @@ class fits_sink(gr.sync_block):
         self.fit = fit
         self.timevector = np.empty(self.n_samples)
         self.START = self.set_TIME()
-        self.time_start = time.perf_counter()
+        self.time_start = time.perf_counter_ns()
         self.timezone = pytz.timezone(tz)
         self.lat = lat
         self.lon = lon
